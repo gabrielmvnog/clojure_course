@@ -1,0 +1,60 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; nREPL Connection was closed
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - File URLs in stacktrace frames are peekable and clickable.
+clj::recur_and_loop.core=> 
+; Jack-in done.
+#'recur_and_loop.lesson1/costumers
+clj::recur_and_loop.lesson1=> 
+; Syntax error compiling at (src/recur_and_loop/lesson1.clj:17:1).
+; Unable to resolve symbol: first in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 748 :method "run" :flags [:java]}]
+clj::recur_and_loop.lesson1=> 
+nil
+clj::recur_and_loop.lesson1=> 
+("guilherme" "carlos" "paulo" "lucia" "ana")
+clj::recur_and_loop.lesson1=> 
+"daniela"
+clj::recur_and_loop.lesson1=> 
