@@ -1,0 +1,34 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; nREPL Connection was closed
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - File URLs in stacktrace frames are peekable and clickable.
+clj::store.core=> 
+; Jack-in done.
+[{:user 15, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}} {:user 15, :items {:mochila {:id :mochila, :quantity 4, :price 160}, :tenis {:id :tenis, :quantity 3}}} {:user 16, :items {:camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}} {:user 16, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}} {:user 17, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}} {:user 18, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}]
+Element {:user 15, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 15, :items {:mochila {:id :mochila, :quantity 4, :price 160}, :tenis {:id :tenis, :quantity 3}}}
+Element {:user 16, :items {:camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 16, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 17, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 18, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 15, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 15, :items {:mochila {:id :mochila, :quantity 4, :price 160}, :tenis {:id :tenis, :quantity 3}}}
+Element {:user 16, :items {:camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 16, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 17, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+Element {:user 18, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
+({:user 15, :total-orders 2, :total-value 920} {:user 16, :total-orders 2, :total-value 400} {:user 17, :total-orders 1, :total-value 280} {:user 18, :total-orders 1, :total-value 280})
+clj::store.lesson3=> 
