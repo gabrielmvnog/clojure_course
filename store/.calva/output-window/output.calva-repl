@@ -5,7 +5,6 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
-; nREPL Connection was closed
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS: 
@@ -17,18 +16,425 @@
 ;   - File URLs in stacktrace frames are peekable and clickable.
 clj::store.core=> 
 ; Jack-in done.
-[{:user 15, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}} {:user 15, :items {:mochila {:id :mochila, :quantity 4, :price 160}, :tenis {:id :tenis, :quantity 3}}} {:user 16, :items {:camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}} {:user 16, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}} {:user 17, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}} {:user 18, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}]
-Element {:user 15, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 15, :items {:mochila {:id :mochila, :quantity 4, :price 160}, :tenis {:id :tenis, :quantity 3}}}
-Element {:user 16, :items {:camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 16, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 17, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 18, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 15, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 15, :items {:mochila {:id :mochila, :quantity 4, :price 160}, :tenis {:id :tenis, :quantity 3}}}
-Element {:user 16, :items {:camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 16, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 17, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-Element {:user 18, :items {:mochila {:id :mochila, :quantity 2, :price 80}, :camiseta {:id :camiseta, :quantity 3, :price 40}, :tenis {:id :tenis, :quantity 2}}}
-({:user 15, :total-orders 2, :total-value 920} {:user 16, :total-orders 2, :total-value 400} {:user 17, :total-orders 1, :total-value 280} {:user 18, :total-orders 1, :total-value 280})
-clj::store.lesson3=> 
+(0 1 2 3 4 5 6 7 8 9)
+(0 1)
+; Execution error (FileNotFoundException) at store.lesson4/eval13521$loading (form-init6079749451854859196.clj:1).
+; Could not locate store/logic__init.class, store/logic.clj or store/logic.cljc on classpath.
+; Syntax error (ClassNotFoundException) compiling at (src/store/lesson5.clj:13:15).
+; s.logic
+; Syntax error (ClassNotFoundException) compiling at (src/store/lesson5.clj:25:15).
+; s.logic
+[{:file "Compiler.java" :line 7115 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6384 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 748 :method "run" :flags [:java]}]
+clj::store.lesson4=> 
+(0 1)
+nil
+clj::store.lesson4=> 
+(0 1 2 3 4 5 6 7 8 9)
+nil
+clj::store.lesson4=> 
+(0 1)
+nil
+clj::store.lesson4=> 
+#'store.lesson4/filter-one
+clj::store.lesson4=> 
+(filter-one 0
+filter-one 1
+filter-one 2
+filter-one 3
+filter-one 4
+filter-one 5
+filter-one 6
+filter-one 7
+filter-one 8
+filter-one 9
+0 1 2 3 4 5 6 7 8 9)
+nil
+clj::store.lesson4=> 
+; Syntax error compiling at (src/store/lesson5.clj:1:8177).
+; Unable to resolve symbol: filter-two in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/gabriel/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 748 :method "run" :flags [:java]}]
+clj::store.lesson4=> 
+#'store.lesson4/filter-two
+clj::store.lesson4=> 
+(filter-one 0
+filter-one 1
+filter-one 2
+filter-one 3
+filter-one 4
+filter-one 5
+filter-one 6
+filter-one 7
+filter-one 8
+filter-one 9
+filter-two 0
+filter-two 1
+filter-two 2
+filter-two 3
+filter-two 4
+filter-two 5
+filter-two 6
+filter-two 7
+filter-two 8
+filter-two 9
+0 1 2 3 4 5 6 7 8 9)
+nil
+clj::store.lesson4=> 
+filter-one 0
+filter-one 1
+filter-one 2
+filter-one 3
+filter-one 4
+filter-one 5
+filter-one 6
+filter-one 7
+filter-one 8
+filter-one 9
+filter-two 0
+filter-two 1
+filter-two 2
+filter-two 3
+filter-two 4
+filter-two 5
+filter-two 6
+filter-two 7
+filter-two 8
+filter-two 9
+(0 1 2 3 4 5 6 7 8 9)
+clj::store.lesson4=> 
+filter-one 0
+filter-one 1
+filter-one 2
+filter-one 3
+filter-one 4
+filter-one 5
+filter-one 6
+filter-one 7
+filter-one 8
+filter-one 9
+filter-one 10
+filter-one 11
+filter-one 12
+filter-one 13
+filter-one 14
+filter-one 15
+filter-one 16
+filter-one 17
+filter-one 18
+filter-one 19
+filter-one 20
+filter-one 21
+filter-one 22
+filter-one 23
+filter-one 24
+filter-one 25
+filter-one 26
+filter-one 27
+filter-one 28
+filter-one 29
+filter-one 30
+filter-one 31
+filter-two 0
+filter-two 1
+filter-two 2
+filter-two 3
+filter-two 4
+filter-two 5
+filter-two 6
+filter-two 7
+filter-two 8
+filter-two 9
+filter-two 10
+filter-two 11
+filter-two 12
+filter-two 13
+filter-two 14
+filter-two 15
+filter-two 16
+filter-two 17
+filter-two 18
+filter-two 19
+filter-two 20
+filter-two 21
+filter-two 22
+filter-two 23
+filter-two 24
+filter-two 25
+filter-two 26
+filter-two 27
+filter-two 28
+filter-two 29
+filter-two 30
+filter-two 31
+(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31filter-one 32
+filter-one 33
+filter-one 34
+filter-one 35
+filter-one 36
+filter-one 37
+filter-one 38
+filter-one 39
+filter-one 40
+filter-one 41
+filter-one 42
+filter-one 43
+filter-one 44
+filter-one 45
+filter-one 46
+filter-one 47
+filter-one 48
+filter-one 49
+filter-two 32
+filter-two 33
+filter-two 34
+filter-two 35
+filter-two 36
+filter-two 37
+filter-two 38
+filter-two 39
+filter-two 40
+filter-two 41
+filter-two 42
+filter-two 43
+filter-two 44
+filter-two 45
+filter-two 46
+filter-two 47
+filter-two 48
+filter-two 49
+ 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49)
+clj::store.lesson4=> 
+filter-one 0
+filter-one 1
+filter-one 2
+filter-one 3
+filter-one 4
+filter-one 5
+filter-one 6
+filter-one 7
+filter-one 8
+filter-one 9
+filter-one 10
+filter-one 11
+filter-one 12
+filter-one 13
+filter-one 14
+filter-one 15
+filter-one 16
+filter-one 17
+filter-one 18
+filter-one 19
+filter-one 20
+filter-one 21
+filter-one 22
+filter-one 23
+filter-one 24
+filter-one 25
+filter-one 26
+filter-one 27
+filter-one 28
+filter-one 29
+filter-one 30
+filter-one 31
+filter-one 32
+filter-one 33
+filter-one 34
+filter-one 35
+filter-one 36
+filter-one 37
+filter-one 38
+filter-one 39
+filter-one 40
+filter-one 41
+filter-one 42
+filter-one 43
+filter-one 44
+filter-one 45
+filter-one 46
+filter-one 47
+filter-one 48
+filter-one 49
+filter-two 0
+filter-two 1
+filter-two 2
+filter-two 3
+filter-two 4
+filter-two 5
+filter-two 6
+filter-two 7
+filter-two 8
+filter-two 9
+filter-two 10
+filter-two 11
+filter-two 12
+filter-two 13
+filter-two 14
+filter-two 15
+filter-two 16
+filter-two 17
+filter-two 18
+filter-two 19
+filter-two 20
+filter-two 21
+filter-two 22
+filter-two 23
+filter-two 24
+filter-two 25
+filter-two 26
+filter-two 27
+filter-two 28
+filter-two 29
+filter-two 30
+filter-two 31
+filter-two 32
+filter-two 33
+filter-two 34
+filter-two 35
+filter-two 36
+filter-two 37
+filter-two 38
+filter-two 39
+filter-two 40
+filter-two 41
+filter-two 42
+filter-two 43
+filter-two 44
+filter-two 45
+filter-two 46
+filter-two 47
+filter-two 48
+filter-two 49
+[0
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49]
+clj::store.lesson4=> 
+filter-one range
+filter-two range
+(rangefilter-one 50
+filter-two 50
+ 50)
+clj::store.lesson4=> 
+filter-one range
+filter-two range
+(rangefilter-one 50
+filter-two 50
+ 50)
+clj::store.lesson4=> 
+filter-one 1
+filter-two 1
+(1filter-one 2
+filter-two 2
+ 2filter-one 3
+filter-two 3
+ 3filter-one 4
+filter-two 4
+ 4filter-one 5
+filter-two 5
+ 5filter-one 6
+filter-two 6
+ 6filter-one 7
+filter-two 7
+ 7filter-one 8
+filter-two 8
+ 8filter-one 9
+filter-two 9
+ 9filter-one 0
+filter-two 0
+ 0)
+clj::store.lesson4=> 

@@ -1,0 +1,25 @@
+(ns store.logic)
+
+(defn sum-total
+  [item]
+  (let [quantity (:quantity (val item))
+        value (:price (val item) 0)]
+
+    (* quantity value)))
+
+
+(defn process-items
+  [items]
+  (reduce + (map sum-total (:items items))))
+
+
+(defn count-total-by-user
+  [[user orders]]
+  {:user user
+   :total-orders (count orders)
+   :total-value (reduce + (map process-items orders))})
+
+(defn summary-by-user [orders]
+  (->> orders
+       (group-by :user)
+       (map count-total-by-user)))
