@@ -1,0 +1,474 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj::hospital.core=> 
+
+; Jack-in done.
+clj::hospital.core=> 
+; Evaluating file: logic_test.clj
+; Syntax error compiling at (test/hospital/logic_test.clj:51:38).
+; No such var: h.model/fila-vazia
+; Syntax error macroexpanding clojure.core/defn at (src/hospital/logic.clj:25:1).
+; :- - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+:- - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
+; Syntax error compiling at (src/hospital/logic.clj:39:9).
+; Unable to resolve symbol: atende in this context
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7105)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj::hospital.logic=> 
+; Evaluation of file logic_test.clj failed: class clojure.lang.Compiler$CompilerException
+
+; Running tests for hospital.logic-test...
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj::hospital.logic-test=> 
+; Syntax error compiling at (test/hospital/logic_test.clj:51:38).
+; No such var: h.model/fila-vazia
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$MapExpr/parse (Compiler.java:3104)
+clojure.lang.Compiler/analyze (Compiler.java:6797)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$TryExpr$Parser/parse (Compiler.java:2314)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7105)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$TryExpr$Parser/parse (Compiler.java:2285)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7105)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$MapExpr/parse (Compiler.java:3104)
+clojure.lang.Compiler/analyze (Compiler.java:6797)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:594)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+; Syntax error compiling at (test/hospital/logic_test.clj:51:38).
+; No such var: h.model/fila-vazia
+; Evaluation of file logic_test.clj failed: class clojure.lang.Compiler$CompilerException
+
+; Running tests for hospital.logic-test...
+; 9 tests finished, all passing 👍, ns: 1, vars: 2
+clj::hospital.logic-test=> 
+#'hospital.model/Hospital
+clj::hospital.model=> 
+#'hospital.logic-test/transfere-test
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running tests for hospital.logic-test...
+; ERROR in hospital.logic-test/transfere-test (line 50):
+; aceita pessoas se cabe
+; error: java.lang.IllegalStateException: Attempting to call unbound fn: #'hospital.logic/transfere (Var.java)
+; expected:
+(=
+ {:hospital {:espera h.model/fila-vazia, :raio-x [5]},
+  :resultado :sucesso}
+ (transfere hospital-original :espera :raio-x))
+; ERROR in hospital.logic-test/transfere-test (line 50):
+; aceita pessoas se cabe
+; error: java.lang.IllegalStateException: Attempting to call unbound fn: #'hospital.logic/transfere (Var.java)
+; expected:
+(=
+ {:hospital {:espera [5], :raio-x [13 51]}, :resultado :sucesso}
+ (transfere hospital-original :espera :raio-x))
+; ERROR in hospital.logic-test/transfere-test (line 70):
+; recusa pessoas se não cabe
+; error: java.lang.IllegalStateException: Attempting to call unbound fn: #'hospital.logic/transfere (Var.java)
+; expected:
+(=
+ {:hospital {:espera [], :raio-x [1 4 52 76 99]},
+  :resultado :impossivel-colocar-pessoa-na-fila}
+ (transfere hospital-cheio :espera :raio-x))
+; 12 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Syntax error macroexpanding clojure.core/defn at (src/hospital/logic.clj:25:1).
+; :- - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+:- - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
+; Syntax error compiling at (src/hospital/logic.clj:39:9).
+; Unable to resolve symbol: atende in this context
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7105)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj::hospital.logic=> 
+#'hospital.logic/transfere
+clj::hospital.logic=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running tests for hospital.logic-test...
+; ERROR in hospital.logic-test/transfere-test (line 50):
+; aceita pessoas se cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x25d0833 "clojure.lang.PersistentQueue@691522fb"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x589c2327 "clojure.lang.PersistentQueue@24"], :raio-x #object[clojure.lang.PersistentQueue 0x751c8987 "clojure.lang.PersistentQueue@1"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x25d0833 "clojure.lang.PersistentQueue@691522fb"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera h.model/fila-vazia, :raio-x [5]},
+  :resultado :sucesso}
+ (transfere hospital-original :espera :raio-x))
+; ERROR in hospital.logic-test/transfere-test (line 50):
+; aceita pessoas se cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x40670d52 "clojure.lang.PersistentQueue@2a882216"], :raio-x #object[clojure.lang.PersistentQueue 0x5527d71b "clojure.lang.PersistentQueue@272076"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x68a44ee6 "clojure.lang.PersistentQueue@9f3"], :raio-x #object[clojure.lang.PersistentQueue 0x5fe20020 "clojure.lang.PersistentQueue@2c"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x40670d52 "clojure.lang.PersistentQueue@2a882216"], :raio-x #object[clojure.lang.PersistentQueue 0x5527d71b "clojure.lang.PersistentQueue@272076"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera [5], :raio-x [13 51]}, :resultado :sucesso}
+ (transfere hospital-original :espera :raio-x))
+; ERROR in hospital.logic-test/transfere-test (line 70):
+; recusa pessoas se não cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera (not (queue? [5])), :raio-x (not (queue? [1 4 52 76 99]))} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera [5], :raio-x [1 4 52 76 99]} :espera], :error [(named {:espera (not (queue? [5])), :raio-x (not (queue? [1 4 52 76 99]))} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera [], :raio-x [1 4 52 76 99]},
+  :resultado :impossivel-colocar-pessoa-na-fila}
+ (transfere hospital-cheio :espera :raio-x))
+; 12 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+#'hospital.logic-test/transfere-test
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running tests for hospital.logic-test...
+; ERROR in hospital.logic-test/transfere-test (line 50):
+; aceita pessoas se cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x4a261efe "clojure.lang.PersistentQueue@4106ef9a"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x1d10d50f "clojure.lang.PersistentQueue@24"], :raio-x #object[clojure.lang.PersistentQueue 0x751c8987 "clojure.lang.PersistentQueue@1"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x4a261efe "clojure.lang.PersistentQueue@4106ef9a"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera h.model/fila-vazia, :raio-x [5]},
+  :resultado :sucesso}
+ (transfere hospital-original :espera :raio-x))
+; ERROR in hospital.logic-test/transfere-test (line 50):
+; aceita pessoas se cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x3af1d6bf "clojure.lang.PersistentQueue@2537af29"], :raio-x #object[clojure.lang.PersistentQueue 0x4f3954e5 "clojure.lang.PersistentQueue@59678aae"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x17005fbf "clojure.lang.PersistentQueue@9f3"], :raio-x #object[clojure.lang.PersistentQueue 0x62b01ec7 "clojure.lang.PersistentQueue@2c"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x3af1d6bf "clojure.lang.PersistentQueue@2537af29"], :raio-x #object[clojure.lang.PersistentQueue 0x4f3954e5 "clojure.lang.PersistentQueue@59678aae"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera [5], :raio-x [13 51]}, :resultado :sucesso}
+ (transfere hospital-original :espera :raio-x))
+; ERROR in hospital.logic-test/transfere-test (line 70):
+; recusa pessoas se não cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x19e8d9ad "clojure.lang.PersistentQueue@4dcf6659"], :raio-x #object[clojure.lang.PersistentQueue 0x22168e73 "clojure.lang.PersistentQueue@5a072b1d"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x38675531 "clojure.lang.PersistentQueue@24"], :raio-x #object[clojure.lang.PersistentQueue 0x23c4479f "clojure.lang.PersistentQueue@1c58e67"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x19e8d9ad "clojure.lang.PersistentQueue@4dcf6659"], :raio-x #object[clojure.lang.PersistentQueue 0x22168e73 "clojure.lang.PersistentQueue@5a072b1d"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera [], :raio-x [1 4 52 76 99]},
+  :resultado :impossivel-colocar-pessoa-na-fila}
+ (transfere hospital-cheio :espera :raio-x))
+; 12 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running tests for hospital.logic-test...
+; ERROR in hospital.logic-test/transfere-test (line 50):
+; aceita pessoas se cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x7a3ecd7e "clojure.lang.PersistentQueue@37cdfa3"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x66a84d6b "clojure.lang.PersistentQueue@24"], :raio-x #object[clojure.lang.PersistentQueue 0x751c8987 "clojure.lang.PersistentQueue@1"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x7a3ecd7e "clojure.lang.PersistentQueue@37cdfa3"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera h.model/fila-vazia, :raio-x [5]},
+  :resultado :sucesso}
+ (transfere hospital-original :espera :raio-x))
+; ERROR in hospital.logic-test/transfere-test (line 50):
+; aceita pessoas se cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x42957411 "clojure.lang.PersistentQueue@5f1e3b0"], :raio-x #object[clojure.lang.PersistentQueue 0x6e6951ee "clojure.lang.PersistentQueue@45b8bff0"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x31a7bac3 "clojure.lang.PersistentQueue@9f3"], :raio-x #object[clojure.lang.PersistentQueue 0x123ee0b8 "clojure.lang.PersistentQueue@2c"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x42957411 "clojure.lang.PersistentQueue@5f1e3b0"], :raio-x #object[clojure.lang.PersistentQueue 0x6e6951ee "clojure.lang.PersistentQueue@45b8bff0"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera [5], :raio-x [13 51]}, :resultado :sucesso}
+ (transfere hospital-original :espera :raio-x))
+; ERROR in hospital.logic-test/transfere-test (line 70):
+; recusa pessoas se não cabe
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x2d395a39 "clojure.lang.PersistentQueue@7d202385"], :raio-x #object[clojure.lang.PersistentQueue 0x7101d1e1 "clojure.lang.PersistentQueue@5f3d0ae5"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x53115c88 "clojure.lang.PersistentQueue@24"], :raio-x #object[clojure.lang.PersistentQueue 0x77769094 "clojure.lang.PersistentQueue@1c58e67"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x2d395a39 "clojure.lang.PersistentQueue@7d202385"], :raio-x #object[clojure.lang.PersistentQueue 0x7101d1e1 "clojure.lang.PersistentQueue@5f3d0ae5"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+(=
+ {:hospital {:espera [], :raio-x [1 4 52 76 99]},
+  :resultado :impossivel-colocar-pessoa-na-fila}
+ (transfere hospital-cheio :espera :raio-x))
+; 12 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; ERROR in hospital.logic-test/transfere-test (line 73):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named (not (map? nil)) hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [nil :espera], :error [(named (not (map? nil)) hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+undefined
+; 1 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; ERROR in hospital.logic-test/transfere-test (line 77):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Input to atende does not match schema: 
+
+	   [(named {:espera #object[clojure.lang.PersistentQueue 0x1ac95bc3 "clojure.lang.PersistentQueue@51f79052"], :raio-x #object[clojure.lang.PersistentQueue 0x3bd3ec35 "clojure.lang.PersistentQueue@90c7c5e7"]} hospital) nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name departamento}], :value [{:espera #object[clojure.lang.PersistentQueue 0x69361145 "clojure.lang.PersistentQueue@24"], :raio-x #object[clojure.lang.PersistentQueue 0xd361cd8 "clojure.lang.PersistentQueue@ea17c"]} :espera], :error [(named {:espera #object[clojure.lang.PersistentQueue 0x1ac95bc3 "clojure.lang.PersistentQueue@51f79052"], :raio-x #object[clojure.lang.PersistentQueue 0x3bd3ec35 "clojure.lang.PersistentQueue@90c7c5e7"]} hospital) nil]} (form-init1849560067296359046.clj)
+; expected:
+undefined
+; 2 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; ERROR in hospital.logic-test/transfere-test (line 77):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Output of atende does not match schema: 
+
+	   {:nao-existe (not (queue? nil))}  
+
+ {:type :schema.core/error, :schema {Keyword (queue Str)}, :value {:espera #object[clojure.lang.PersistentQueue 0x49ba0cd0 "clojure.lang.PersistentQueue@54"], :raio-x #object[clojure.lang.PersistentQueue 0x556bd662 "clojure.lang.PersistentQueue@100f"], :nao-existe nil}, :error {:nao-existe (not (queue? nil))}} (form-init1849560067296359046.clj)
+; expected:
+undefined
+; 2 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+#'hospital.logic/transfere
+clj::hospital.logic=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; ERROR in hospital.logic-test/transfere-test (line 77):
+; Uncaught exception, not in assertion
+; error: java.lang.AssertionError: Assert failed: (contains? hospital de) (form-init1849560067296359046.clj)
+; expected:
+undefined
+; 2 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; 2 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; FAIL in hospital.logic-test/transfere-test (logic_test.clj:79):
+; condições obrigatórias
+; expected:
+(thrown? AssertionError (transfere hospital :raio-x :nao-existe))
+; actual:
+nil
+; 3 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Syntax error reading source at (REPL:33:12).
+; Unmatched delimiter: )
+clojure.main/repl (main.clj:433)
+clojure.main/repl (main.clj:432)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj::hospital.logic=> 
+#'hospital.logic/transfere
+clj::hospital.logic=> 
+#'hospital.logic/transfere
+clj::hospital.logic=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-test
+; Running test: transfere-test…
+; 3 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Running all project tests…
+; 12 tests finished, all passing 👍, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Running all project tests…
+; 12 tests finished, all passing 👍, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+#'hospital.logic/transfere
+clj::hospital.logic=> 
+; Running all project tests…
+; 12 tests finished, all passing 👍, ns: 1, vars: 3
+clj::hospital.logic=> 
+#'hospital.logic/transfere
+clj::hospital.logic=> 
+; Running all project tests…
+; 12 tests finished, all passing 👍, ns: 1, vars: 3
+clj::hospital.logic=> 
