@@ -1,0 +1,544 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj::hospital.core=> 
+
+; Jack-in done.
+clj::hospital.core=> 
+#'hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5
+clj::hospital.logic-test=> 
+; Running all project tests…
+; 27 tests finished, all passing 👍, ns: 1, vars: 2
+clj::hospital.logic-test=> 
+#'hospital.logic-test/nome-aleatorio
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+; Syntax error compiling at (test/hospital/logic_test.clj:58:32).
+; Unable to resolve symbol: fila in this context
+; Evaluation of file logic_test.clj failed: class clojure.lang.Compiler$CompilerException
+
+; Running test: nome-aleatorio…
+; No tests found. 😱, ns: 0, vars: 0
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+[] []
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+[ylxeJ3zl 62G479jX8H 4QDRTmi8 1Fo32] [6J896Xt1Qf]
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+[I0Sttg6] [o8fO08 V1vSN4G95l QJf3I]
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Syntax error compiling at (test/hospital/logic_test.clj:54:26).
+; Unable to resolve symbol: nome-aleatorio-gen in this context
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj::hospital.logic-test=> 
+#'hospital.logic-test/fila-nao-cheia-gen
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+[] [L9o1Z Fw7igf 08RDF 1q966QGtR]
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (line 56):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Input to transfere does not match schema: 
+
+	   [(named {:espera (not (queue? [])), :raio-x (not (queue? a-clojure.lang.PersistentVector)), :ultrasom (not (queue? a-clojure.lang.PersistentVector))} hospital) nil nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name de} #schema.core.One{:schema Keyword, :optional? false, :name para}], :value [{:espera [], :raio-x ["XN503N79m" "e1uRf" "7N78FNbR" "IoSHRwv"], :ultrasom ["Wt42nIwDh" "psq888K5w3" "ESsNg5f"]} :espera :ultrasom], :error [(named {:espera (not (queue? [])), :raio-x (not (queue? a-clojure.lang.PersistentVector)), :ultrasom (not (queue? a-clojure.lang.PersistentVector))} hospital) nil nil]} (logic.clj)
+; expected:
+undefined
+; 1 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+; Syntax error compiling at (test/hospital/logic_test.clj:64:25).
+; Unable to resolve symbol: hospital in this context
+; Evaluation of file logic_test.clj failed: class clojure.lang.Compiler$CompilerException
+
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (line 56):
+; Uncaught exception, not in assertion
+; error: clojure.lang.ExceptionInfo: Input to transfere does not match schema: 
+
+	   [(named {:espera (not (queue? ["qdWSpe4Tv"])), :raio-x (not (queue? a-clojure.lang.PersistentVector)), :ultrasom (not (queue? ["3Dc4mf"]))} hospital) nil nil]  
+
+ {:type :schema.core/error, :schema [#schema.core.One{:schema {Keyword (queue Str)}, :optional? false, :name hospital} #schema.core.One{:schema Keyword, :optional? false, :name de} #schema.core.One{:schema Keyword, :optional? false, :name para}], :value [{:espera ["qdWSpe4Tv"], :raio-x ["1oZlpRoWZ" "6sVIZCQ5tS" "686NbBA"], :ultrasom ["3Dc4mf"]} :espera :ultrasom], :error [(named {:espera (not (queue? ["qdWSpe4Tv"])), :raio-x (not (queue? a-clojure.lang.PersistentVector)), :ultrasom (not (queue? ["3Dc4mf"]))} hospital) nil nil]} (logic.clj)
+; expected:
+undefined
+; 1 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+#'hospital.logic-test/fila-nao-cheia-gen
+clj::hospital.logic-test=> 
+; Syntax error compiling at (test/hospital/logic_test.clj:68:25).
+; Unable to resolve symbol: hospital in this context
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7105)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7105)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+; Syntax error compiling at (test/hospital/logic_test.clj:68:25).
+; Unable to resolve symbol: hospital in this context
+; Evaluation of file logic_test.clj failed: class clojure.lang.Compiler$CompilerException
+
+; Running test: fila-nao-cheia-gen…
+; No tests found. 😱, ns: 0, vars: 0
+clj::hospital.logic-test=> 
+; Syntax error compiling at (test/hospital/logic_test.clj:68:25).
+; Unable to resolve symbol: hospital in this context
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7105)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7105)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7095)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7107)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:748)
+clj::hospital.logic-test=> 
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj::hospital.logic-test=> 
+; Running all project tests…
+; 28 tests finished, all passing 👍, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+#'hospital.logic-test/total-de-pacientes
+clj::hospital.logic-test=> 
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (line 64):
+; Uncaught exception, not in assertion
+; error: java.lang.UnsupportedOperationException: count not supported on this type: Keyword (RT.java)
+; expected:
+undefined
+; 1 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (line 64):
+; Uncaught exception, not in assertion
+; error: java.lang.UnsupportedOperationException: count not supported on this type: Keyword (RT.java)
+; expected:
+undefined
+; 1 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Running all project tests…
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (line 64):
+; Uncaught exception, not in assertion
+; error: java.lang.UnsupportedOperationException: count not supported on this type: Keyword (RT.java)
+; expected:
+undefined
+; 28 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Running all project tests…
+; ERROR in hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas (line 64):
+; Uncaught exception, not in assertion
+; error: java.lang.UnsupportedOperationException: count not supported on this type: Keyword (RT.java)
+; expected:
+undefined
+; 28 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+#'hospital.logic/transfere
+clj::hospital.logic=> 
+#'hospital.logic/transfere
+clj::hospital.logic=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Running all project tests…
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" "" "" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" "" "" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera [""]}, :resultado :sucesso}
+; actual:
+({:espera [""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" "" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" "" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera [""]}, :resultado :sucesso}
+; actual:
+({:espera [""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:45):
+; expected:
+{:result true}
+; actual:
+{:shrunk
+ {:total-nodes-visited 4,
+  :depth 2,
+  :pass? false,
+  :result false,
+  :result-data nil,
+  :time-shrinking-ms 14,
+  :smallest [[] ""]},
+ :failed-after-ms 38,
+ :num-tests 1,
+ :seed 1604781420273,
+ :fail [["" "" ""] ""],
+ :result false,
+ :result-data nil,
+ :failing-size 0,
+ :pass? false,
+ :test-var "coloca-uma-pessoa-em-filas-menores-que-5"}
+; 23 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Running all project tests…
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" "" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" "" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera [""]}, :resultado :sucesso}
+; actual:
+({:espera [""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera [""]}, :resultado :sucesso}
+; actual:
+({:espera [""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:45):
+; expected:
+{:result true}
+; actual:
+{:shrunk
+ {:total-nodes-visited 3,
+  :depth 1,
+  :pass? false,
+  :result false,
+  :result-data nil,
+  :time-shrinking-ms 10,
+  :smallest [[] ""]},
+ :failed-after-ms 5,
+ :num-tests 1,
+ :seed 1604781440028,
+ :fail [["" ""] ""],
+ :result false,
+ :result-data nil,
+ :failing-size 0,
+ :pass? false,
+ :test-var "coloca-uma-pessoa-em-filas-menores-que-5"}
+; 22 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Running all project tests…
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" "" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" "" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera [""]}, :resultado :sucesso}
+; actual:
+({:espera [""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera [""]}, :resultado :sucesso}
+; actual:
+({:espera [""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:45):
+; expected:
+{:result true}
+; actual:
+{:shrunk
+ {:total-nodes-visited 3,
+  :depth 1,
+  :pass? false,
+  :result false,
+  :result-data nil,
+  :time-shrinking-ms 7,
+  :smallest [[] ""]},
+ :failed-after-ms 5,
+ :num-tests 1,
+ :seed 1604781451008,
+ :fail [["" ""] ""],
+ :result false,
+ :result-data nil,
+ :failing-size 0,
+ :pass? false,
+ :test-var "coloca-uma-pessoa-em-filas-menores-que-5"}
+; 22 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Running all project tests…
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" "" "" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" "" "" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera [""]}, :resultado :sucesso}
+; actual:
+({:espera [""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" "" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" "" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera ["" ""]}, :resultado :sucesso}
+; actual:
+({:espera ["" ""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:49):
+; expected:
+{:hospital {:espera [""]}, :resultado :sucesso}
+; actual:
+({:espera [""]})
+; FAIL in hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5 (logic_test.clj:45):
+; expected:
+{:result true}
+; actual:
+{:shrunk
+ {:total-nodes-visited 4,
+  :depth 2,
+  :pass? false,
+  :result false,
+  :result-data nil,
+  :time-shrinking-ms 14,
+  :smallest [[] ""]},
+ :failed-after-ms 3,
+ :num-tests 1,
+ :seed 1604781457652,
+ :fail [["" "" ""] ""],
+ :result false,
+ :result-data nil,
+ :failing-size 0,
+ :pass? false,
+ :test-var "coloca-uma-pessoa-em-filas-menores-que-5"}
+; 23 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+#'hospital.logic-test/coloca-uma-pessoa-em-filas-menores-que-5
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: coloca-uma-pessoa-em-filas-menores-que-5…
+; 11 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+; Running all project tests…
+; 28 tests finished, all passing 👍, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+#'hospital.logic/total-de-pacientes
+clj::hospital.logic=> 
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj::hospital.logic-test=> 
+; No test found at cursor
+clj::hospital.logic-test=> 
+; Running all project tests…
+; 28 tests finished, all passing 👍, ns: 1, vars: 3
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj::hospital.logic-test=> 
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+clj::hospital.logic-test=> 
+; Evaluating file: logic_test.clj
+#'hospital.logic-test/transfere-tem-que-manter-a-quantidade-de-pessoas
+; Running test: transfere-tem-que-manter-a-quantidade-de-pessoas…
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj::hospital.logic-test=> 
